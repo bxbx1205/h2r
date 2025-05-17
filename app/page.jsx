@@ -1,7 +1,8 @@
 "use client";
-import Squares from '../components/Squares.jsx';
-import DiscordLanding from '../components/DiscordLanding.jsx';
-import InstagramLanding from '../components/InstagramLanding.jsx';
+import Squares from '../components/Squares';
+import DiscordLanding from '../components/DiscordLanding';
+import InstagramLanding from '../components/InstagramLanding';
+import Footer from '@/components/Footer';
 
 
 
@@ -12,6 +13,7 @@ export default function Home() {
        <div className="app">
       <DiscordLanding />
       <InstagramLanding />
+      <Footer />
     </div>
     
 
