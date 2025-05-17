@@ -1,14 +1,16 @@
+"use client";
 import Squares from '../components/Squares.jsx';
+import DiscordLanding from '../components/DiscordLanding.jsx';
+
 
 export default function Home() {
   return (
-<<<<<<< HEAD
+
     <>
-  <h1>hello</h1>
-    
-    </>
-    
-=======
+    <div className="app">
+      <DiscordLanding />
+    </div>
+
     <div style={{
       position: 'fixed',
       inset: 0,
@@ -25,6 +27,6 @@ export default function Home() {
         hoverFillColor='#ffa500'
       />
     </div>
->>>>>>> a06b6c602f64ff819b36f47792830d137ce8d5e5
+    </>
   );
 }
