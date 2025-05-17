@@ -1,15 +1,19 @@
 "use client";
 import Squares from '../components/Squares.jsx';
 import DiscordLanding from '../components/DiscordLanding.jsx';
+import InstagramLanding from '../components/InstagramLanding.jsx';
+
 
 
 export default function Home() {
   return (
 
     <>
-    <div className="app">
+       <div className="app">
       <DiscordLanding />
+      <InstagramLanding />
     </div>
+    
 
     <div style={{
       position: 'fixed',

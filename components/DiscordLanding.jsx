@@ -59,7 +59,7 @@ const DiscordLanding = () => {
         {/* Right Section */}
         <div className="lg:w-1/2 w-full flex justify-center">
           <motion.div 
-            className="bg-[#232842] w-full max-w-md rounded-3xl p-6 shadow-xl"
+            className="bg-[#232842] w-full max-w-xl rounded-3xl p-6 shadow-xl"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
@@ -70,8 +70,8 @@ const DiscordLanding = () => {
                 {/* Background Image with proper cropping/positioning */}
                 <Image 
                   src="/img1.png"
-                  width={500} 
-                  height={500} 
+                  width={1000} 
+                  height={1000} 
                   alt="RBU Background"
                   className="absolute inset-0 w-full h-full object-cover object-center" 
                 />
