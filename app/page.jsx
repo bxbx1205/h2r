@@ -2,6 +2,9 @@
 import Squares from '../components/Squares.jsx';
 import DiscordLanding from '../components/DiscordLanding.jsx';
 import LandingPage from '../components/LandingPage.jsx';
+import InstagramLanding from '../components/InstagramLanding';
+import Footer from '@/components/Footer';
+
 
 
 export default function Home() {
@@ -10,6 +13,8 @@ export default function Home() {
             <div className="app">
                 <LandingPage />
                 <DiscordLanding />
+                <InstagramLanding />
+                <Footer />
             </div>
 
             <div style={{
