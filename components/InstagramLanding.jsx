@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const InstagramLanding = () => {
     return (
-        <div className="min-h-screen flex items-center p-5" id='Instagram'>
+        <div className="min-h-screen flex items-center p-5" id='instagram'>
             <div className="max-w-7xl mx-auto w-full flex flex-col lg:flex-row items-center justify-between gap-10">
                 {/* Left Section - Image */}
                 <div className="lg:w-1/2 w-full flex justify-center order-1 lg:order-none">

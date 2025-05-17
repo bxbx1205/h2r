@@ -22,7 +22,7 @@ export default function LandingPage() {
 
             {/* Navigation Links */}
             <nav className="flex space-x-8 mt-2">
-                <Link href='#discord' className="text-gray-400 hover:text-white transition">Discord</Link>
+                <Link href="#discord" className="text-gray-400 hover:text-white transition">Discord</Link>
                 <a href="#instagram" className="text-gray-400 hover:text-white transition">Instagram</a>
                 <a href="#" className="text-gray-400 hover:text-white transition">Anonymous Confession</a>
                 <a href="#" className="text-gray-400 hover:text-white transition">Notes Warehouse</a>
