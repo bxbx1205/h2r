@@ -4,9 +4,9 @@ import { gsap } from 'gsap';
 function PixelTransition({
     firstContent,
     secondContent,
-    gridSize = 7,
+    gridSize = 50,
     pixelColor = 'currentColor',
-    animationStepDuration = 0.3,
+    animationStepDuration = 0.5,
     className = '',
     style = {},
     aspectRatio = '100%',
@@ -113,7 +113,7 @@ function PixelTransition({
         rounded-[15px]
         border-2
         border-white
-        w-[300px]
+        w-[1152px]
         max-w-full
         relative
         overflow-hidden
@@ -126,7 +126,7 @@ function PixelTransition({
             <div style={{ paddingTop: aspectRatio }} />
 
             <div className="absolute inset-0 w-full h-full">
-                {firstContent}
+                {secondContent}
             </div>
 
             <div
@@ -134,7 +134,7 @@ function PixelTransition({
                 className="absolute inset-0 w-full h-full z-[2]"
                 style={{ display: 'none' }}
             >
-                {secondContent}
+                {firstContent}
             </div>
 
             <div
