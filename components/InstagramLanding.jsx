@@ -9,7 +9,7 @@ const InstagramLanding = () => {
                 {/* Left Section - Image */}
                 <div className="lg:w-1/2 w-full flex justify-center order-1 lg:order-none">
                     <motion.div 
-                        className="bg-[#232842] w-full max-w-xl rounded-3xl p-6 shadow-xl"
+                        className="bg-[#232842] w-full max-w-xl rounded-3xl p-3 shadow-xl"
                         initial={{ opacity: 0, scale: 0.9 }}
                         animate={{ opacity: 1, scale: 1 }}
                         transition={{ duration: 0.7 }}
