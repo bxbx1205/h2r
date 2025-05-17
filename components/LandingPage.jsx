@@ -64,7 +64,7 @@ export default function LandingPage() {
                 gridSize={12}
                 pixelColor='#ffffff'
                 animationStepDuration={0.4}
-                className="custom-pixel-card"
+                className="custom-pixel-card w-full h-full"
             />
         </div>
     );
