@@ -8,7 +8,7 @@ export default function LandingPage() {
         <div className="min-h-screen bg-black flex flex-col items-center justify-start">
             {/* Top Navigation */}
             <div className="w-full flex justify-between items-center px-8 py-4">
-                <span className="text-white font-bold text-2xl">humansofrbu</span>
+                <span className="text-white font-bold text-2xl">humansof<span className="text-orange-500 text-bold">rbu</span></span>
                 <div className="flex space-x-6 items-center">
                 </div>
 
@@ -21,7 +21,7 @@ export default function LandingPage() {
             </div>
 
             {/* Navigation Links */}
-            <nav className="flex space-x-8 mt-2">
+            <nav className="flex space-x-8 mt-2 bg-gray-800 py-5 px-6">
                 <Link href="#discord" className="text-gray-400 hover:text-white transition">Discord</Link>
                 <a href="#instagram" className="text-gray-400 hover:text-white transition">Instagram</a>
                 <a href="#" className="text-gray-400 hover:text-white transition">Anonymous Confession</a>
@@ -31,18 +31,18 @@ export default function LandingPage() {
             {/* Main Content */}
             <main className="flex flex-col items-center justify flex-1 mt-24">
 
-                <GradientText
-                    colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-                    animationSpeed={3}
-                    showBorder={false}
-                    className="custom-class text-2xl"
-                >
-                    We are bringing Anonymous Confessions , Notes Wareshouse and many more ...
-                </GradientText>
-
                 {/* Centered "dip" Section */}
                 <div className="flex flex-col items-center">
-                    <span className="text-xl text-white font-large mb-2">humansofrbu is a student driven community, working in shadows to create a social space for RBU students</span>
+                    <span className="text-6xl text-white font-bold mb-2">humansof<span className="text-orange-500 font-bold">rbu</span>, a student driven community</span>
+                    <GradientText
+                        colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+                        animationSpeed={3}
+                        showBorder={false}
+                        className="custom-class text-2xl"
+                    >
+                        We are bringing Anonymous Confessions , Notes Wareshouse and many more ...
+                    </GradientText>
+
                     <span className="text-gray-400 text-lg mb-8">
                         <span className="text-gray-600 text-xl mr-4">(hover it)</span>
                     </span>
