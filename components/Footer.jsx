@@ -48,7 +48,7 @@ const Footer = () => {
           <p className="text-white/70 text-sm flex items-center">
             <span>Made with</span>
             <span className="text-[#FF4B39] mx-1 animate-pulse">💖</span>
-            <span>with team Humans of RBU</span>
+            <span>By team Humans of RBU</span>
           </p>
         </div>
       </div>
