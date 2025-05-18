@@ -89,14 +89,15 @@ export default function LandingPage() {
                         humansof<span className="text-orange-500 font-bold">rbu</span>, a student driven community
                     </span>
 
-                    <GradientText
-                        colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
-                        animationSpeed={3}
-                        showBorder={false}
-                        className="custom-class text-base sm:text-xl max-w-xl mt-2"
-                    >
-                        We are bringing Anonymous Confessions, Notes Warehouse and many more ...
-                    </GradientText>
+                   <GradientText
+  colors={["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"]}
+  animationSpeed={3}
+  showBorder={false}
+  className="custom-class text-base sm:text-xl max-w-xl mt-2 px-2"  // <-- Add px-2 for horizontal padding
+>
+  We are bringing Anonymous Confessions, Notes Warehouse and many more ...
+</GradientText>
+
 
                     <span className="text-gray-400 text-sm sm:text-base mb-6 mt-2">
                         <span className="text-gray-600 mr-2">(hover it)</span>
