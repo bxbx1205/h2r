@@ -43,16 +43,23 @@ const DiscordLanding = () => {
                             Humans of RBU.
                         </motion.p>
 
-                        <motion.button
-                            className="bg-[#FF4B39] text-white font-semibold py-3 px-8 rounded shadow-[0_0_15px_rgba(255,75,57,0.5)] hover:shadow-[0_0_25px_rgba(255,75,57,0.7)] transition-all duration-300 hover:-translate-y-1"
-                            initial={{ opacity: 0, y: 20 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.5, delay: 0.6 }}
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                        >
-                            Join Here!
-                        </motion.button>
+                         <motion.a
+                                                    href="https://discord.gg/qYhRRdumMM"
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="inline-block"
+                                                    initial={{ opacity: 0, y: 20 }}
+                                                    animate={{ opacity: 1, y: 0 }}
+                                                    transition={{ duration: 0.5, delay: 0.6 }}
+                                                    whileHover={{ scale: 1.05 }}
+                                                    whileTap={{ scale: 0.95 }}
+                                                >
+                                                    <button
+                                                        className="bg-[#FF4B39] text-white font-semibold py-3 px-8 rounded shadow-[0_0_15px_rgba(255,75,57,0.5)] hover:shadow-[0_0_25px_rgba(255,75,57,0.7)] transition-all duration-300 hover:-translate-y-1"
+                                                    >
+                                                        Join Here!
+                                                    </button>
+                                                </motion.a>
                     </div>
                 </div>
 
