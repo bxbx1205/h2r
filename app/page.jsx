@@ -1,9 +1,11 @@
 "use client";
-import Squares from '../components/Squares.jsx';
-import DiscordLanding from '../components/DiscordLanding.jsx';
-import LandingPage from '../components/LandingPage.jsx';
-import InstagramLanding from '../components/InstagramLanding';
-import Footer from '@/components/Footer';
+import dynamic from 'next/dynamic';
+
+const Squares = dynamic(() => import('../components/Squares.jsx'), { ssr: false });
+const LandingPage = dynamic(() => import('../components/LandingPage.jsx'), { ssr: false });
+const DiscordLanding = dynamic(() => import('../components/DiscordLanding.jsx'), { ssr: false });
+const InstagramLanding = dynamic(() => import('../components/InstagramLanding'), { ssr: false });
+const Footer = dynamic(() => import('@/components/Footer'), { ssr: false });
 
 export default function Home() {
   return (
