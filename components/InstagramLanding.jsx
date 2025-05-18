@@ -48,14 +48,16 @@ const InstagramLanding = () => {
                         >
                             INSTAGRAM COMMUNITY
                         </motion.h1>
-                        <motion.p
-                            className="text-white/80 text-base mb-10 leading-relaxed"
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ duration: 0.5, delay: 0.4 }}
-                        >
-                            Join our Instagram to connect, share stories, and stay updated on events at Ramdeobaba University. Be part of a vibrant community celebrating students, faculty, and alumni through real stories and experiences.
-                        </motion.p>
+                        <div className='backdrop-blur-2xl rounded-xl'>
+                            <motion.p
+                                className="text-white text-base mb-10 leading-relaxed px-8 py-5"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 0.5, delay: 0.4 }}
+                            >
+                                Join our Instagram to connect, share stories, and stay updated on events at Ramdeobaba University. Be part of a vibrant community celebrating students, faculty, and alumni through real stories and experiences.
+                            </motion.p>
+                        </div>
                         <motion.a
                             href="https://www.instagram.com/humansofrbu/"
                             target="_blank"

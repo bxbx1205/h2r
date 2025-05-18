@@ -32,18 +32,17 @@ const DiscordLanding = () => {
                             DISCORD COMMUNITY
                         </motion.h1>
 
-                        <div className='backdrop-blur-2xl rounded-xl'>
-                            <motion.p
-                                className="text-white text-base mb-10 leading-relaxed px-8 py-5"
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                                transition={{ duration: 0.5, delay: 0.4 }}
-                            >
-                                A community space for students and followers to engage in real-time conversations,
-                                participate in discussions, and stay updated on events or announcements related to
-                                Humans of RBU.
-                            </motion.p>
-                        </div>
+                        <motion.p
+                            className="text-white text-base mb-10 leading-relaxed backdrop-blur-xs px-8 py-5"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ duration: 0.5, delay: 0.4 }}
+                        >
+                            A community space for students and followers to engage in real-time conversations,
+                            participate in discussions, and stay updated on events or announcements related to
+                            Humans of RBU.
+                        </motion.p>
+
                         <motion.a
                             href="https://discord.gg/qYhRRdumMM"
                             target="_blank"
