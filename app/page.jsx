@@ -5,34 +5,73 @@ import LandingPage from '../components/LandingPage.jsx';
 import InstagramLanding from '../components/InstagramLanding';
 import Footer from '@/components/Footer';
 
-
-
 export default function Home() {
-    return (
-        <>
-            <div className="app">
-                <LandingPage />
-                <DiscordLanding />
-                <InstagramLanding />
-                <Footer />
-            </div>
+  return (
+    <>
+      <div
+        style={{
+          position: 'fixed',
+          inset: 0,
+          zIndex: -1,
+          width: '100vw',
+          height: '100vh',
+          overflow: 'hidden'
+        }}
+        aria-hidden="true"
+      >
+        <Squares
+          speed={0.5}
+          squareSize={40}
+          direction='down'
+          borderColor='#fff'
+          hoverFillColor='#ffa500'
+        />
+      </div>
 
-            <div style={{
-                position: 'fixed',
-                inset: 0,
-                zIndex: -1, // behind other content
-                width: '100vw',
-                height: '100vh',
-                overflow: 'hidden'
-            }}>
-                <Squares
-                    speed={0.5}
-                    squareSize={40}
-                    direction='down'
-                    borderColor='#fff'
-                    hoverFillColor='#ffa500'
-                />
-            </div>
-        </>
-    );
+      <div
+        className="app"
+        style={{
+          height: '100vh',
+          overflowY: 'scroll',
+          scrollSnapType: 'y mandatory',
+        }}
+      >
+        <div
+          style={{
+            scrollSnapAlign: 'start',
+            height: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center'
+          }}
+        >
+          <LandingPage />
+        </div>
+        <div style={{ height: '40px', background: 'transparent' }} />
+        <div
+          style={{
+            scrollSnapAlign: 'start',
+            height: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center'
+          }}
+        >
+          <DiscordLanding />
+        </div>
+        <div
+          style={{
+            scrollSnapAlign: 'start',
+            minHeight: '100vh',
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-between'
+          }}
+        >
+          <InstagramLanding />
+          <Footer />
+        </div>
+      </div>
+    </>
+  );
 }
